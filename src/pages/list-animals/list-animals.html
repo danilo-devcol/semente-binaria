@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>list-animals</ion-title>
+    <ion-title>Origem Animal</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,8 @@
 
 <ion-content padding class="list-animals">
 
+  <ion-card class="_listAnimals" *ngFor="let animal of animals">
+    <img class="_vegetable" src="assets/img/Animals/{{animal}}.png"/>
+    <div class="card-title">{{animal}}</div>
+  </ion-card>
 </ion-content>

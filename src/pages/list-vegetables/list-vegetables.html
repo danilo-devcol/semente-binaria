@@ -7,12 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>list-vegetables</ion-title>
+    <ion-title>Origem Vegetal</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding class="list-vegetables">
-
+  <ion-card class="_listVegetables" *ngFor="let vegetable of vegetables">
+    <img class="_vegetable" src="assets/img/Vegetables/{{vegetable}}.png"/>
+    <div class="card-title">{{vegetable}}</div>
+  </ion-card>
 </ion-content>

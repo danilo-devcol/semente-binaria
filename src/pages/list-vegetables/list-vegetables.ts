@@ -15,8 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListVegetablesPage {
 
+  vegetables: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.vegetables = [
+      'Alface',
+      'Couve',
+      'Tomate',
+      'Abóbora'
+    ]
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListVegetablesPage');
