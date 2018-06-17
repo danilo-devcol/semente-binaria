@@ -6,11 +6,16 @@
   <!--</ion-navbar>-->
 </ion-header>
 
-<ion-content>
-    <ion-card class="_animalOrigin">
-        Origem Animal
+<ion-content class="card-background-page">
+    <ion-card class="_animalOrigin" [navPush]="listAnimals">
+      <img src="assets/img/animais.png"/>
+      <div class="card-title">Origem Animal</div>
+      <div class="card-subtitle">Ovos, Queijos, Carne...</div>
     </ion-card>
-    <ion-card class="_VegetableOrigin">
-        Origem Vegetal
+  <ion-title class="title">Qual tipo de produto deseja cadastrar?</ion-title>
+    <ion-card class="_VegetableOrigin"  [navPush]="listVegetables">
+      <img src="assets/img/vegetais.png"/>
+      <div class="card-title">Origem Vegetal</div>
+      <div class="card-subtitle">Alface, Tomate, Couve...</div>
     </ion-card>
 </ion-content>
