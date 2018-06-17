@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header>.
 
   <ion-navbar>
     <ion-title>Origem Vegetal</ion-title>
@@ -12,10 +12,10 @@
 
 </ion-header>
 
-
 <ion-content padding class="list-vegetables">
-  <ion-card class="_listVegetables" *ngFor="let vegetable of vegetables">
-    <img class="_vegetable" src="assets/img/Vegetables/{{vegetable}}.png"/>
-    <div class="card-title">{{vegetable}}</div>
+  <ion-card class="_listVegetables" *ngFor="let vegetable of vegetables" (click)="openModal(vegetable.nome)">
+    <img class="_vegetable" src="assets/img/Vegetables/{{vegetable.idproduto}}.png"/>
+    <div class="card-title">{{vegetable.nome}}</div>
   </ion-card>
 </ion-content>
+

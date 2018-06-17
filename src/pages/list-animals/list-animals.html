@@ -15,7 +15,7 @@
 
 <ion-content padding class="list-animals">
 
-  <ion-card class="_listAnimals" *ngFor="let animal of animals">
+  <ion-card class="_listAnimals" *ngFor="let animal of animals" (click)="openModal(animal)">
     <img class="_vegetable" src="assets/img/Animals/{{animal}}.png"/>
     <div class="card-title">{{animal}}</div>
   </ion-card>

@@ -19,7 +19,7 @@ export class ListVegetablesPage {
   public getProdutos()
   {
     this.produtoservice.findAll().subscribe(response => response.produtos.map(
-        produto=>{this.vegetables.push(produto.nome)}
+        produto=>{this.vegetables.push(produto)}
       )
     );
   }
