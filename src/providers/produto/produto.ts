@@ -16,7 +16,7 @@ export class ProdutoProvider {
   public urlProdutos;
 
   constructor(public http: HttpClient) {
-    this.urlProdutos = 'https://devcol.com.br/backend-hackathon/public/api' + '/produtos'
+    this.urlProdutos = 'https://devcol.com.br/backend-hackathon/public/api' + '/produtos?idcategoria=2'
   }
 
   public findAll():Observable<any>{
